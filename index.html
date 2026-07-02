@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- PRIVACY CONTROLS AND COOKIE SOLUTION DE IUBENDA (Cargado en primera línea para ejecución prioritaria) -->
     <script type="text/javascript" src="https://embeds.iubenda.com/widgets/39c6ccd4-afd8-40b0-8bf7-f393729d5327.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO ON-PAGE: Título y Meta Descripción añadidos -->
-    <title>Propel Agents AI | Sistema Operativo Inmobiliario</title>
-    <meta name="description" content="Automatiza la cualificación y gestión de leads inmobiliarios 24/7. Integra IA en tu CRM y ahorra 15 horas semanales. Agenda tu demo técnica.">
+    <title>Propel Agents AI | Automatización de Leads para Inmobiliarias</title>
+    <meta name="description" content="Responde automáticamente a nuevos compradores, organiza cada oportunidad en HubSpot y ayuda a tu equipo comercial a actuar más rápido desde el primer contacto.">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- INTEGRACIÓN DE CALENDLY: Estilos oficiales para el Modal flotante -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     
     <style>
-        /* ESTÉTICA SAAS LIMPIA: Fondo claro, alto contraste y credibilidad */
         :root {
             --bg-base: #ffffff; 
             --bg-surface: #f8fafc; 
@@ -39,7 +35,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         body { background-color: var(--bg-base); color: var(--text-primary); font-family: var(--font-body); line-height: 1.6; overflow-x: hidden; }
 
-        /* HEADER NEGRO PREMIUM AMPLIADO */
         header {
             position: fixed; width: 100%; top: 0; padding: 20px 5%;
             display: flex; justify-content: space-between; align-items: center;
@@ -54,36 +49,21 @@
         .btn-nav { background: #fff; color: #000; padding: 10px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9rem; transition: 0.2s; border: 1px solid #fff; }
         .btn-nav:hover { background: transparent; color: #fff; }
 
-        /* AJUSTE PARA EVITAR SOLAPAMIENTO DE TEXTO */
         main { padding-top: 150px; }
 
-        /* HERO SECTION */
         .hero { padding: 60px 5% 40px; text-align: center; max-width: 1000px; margin: 0 auto; }
         .hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px; color: var(--text-primary); }
         .hero h1 span { color: var(--accent); }
         .hero p { color: var(--text-muted); font-size: clamp(1.1rem, 2vw, 1.25rem); max-width: 750px; margin: 0 auto 40px; }
 
         .cta-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 50px; }
-        .btn-primary { background: var(--accent); color: #fff; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.2s; box-shadow: var(--shadow-md); }
+        .btn-primary { background: var(--accent); color: #fff; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.2s; box-shadow: var(--shadow-md); border: none; cursor: pointer; display: inline-block; }
         .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
 
-        /* LIVE LOGS SIMULATOR */
-        .live-logs { background: #0f172a; border-radius: 12px; max-width: 650px; margin: 0 auto 60px; text-align: left; box-shadow: var(--shadow-lg); overflow: hidden; border: 1px solid #1e293b; }
-        .log-header { background: #1e293b; padding: 10px 20px; color: #94a3b8; font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #334155; }
-        .pulse-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
-        .log-body { padding: 20px; font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 10px; }
-        .log-body p { margin: 0; }
-        .log-time { color: #64748b; margin-right: 15px; }
-        .log-success { color: #10b981; }
-        .log-highlight { color: #38bdf8; font-weight: 500; border-left: 2px solid #38bdf8; padding-left: 10px; margin-top: 5px; }
-
-        /* HERO IMAGE */
         .hero-image-wrapper { max-width: 1100px; margin: 0 auto 80px; padding: 0 5%; }
-        .hero-image-wrapper img { width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-light); }
+        .hero-image-wrapper video { width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-light); display: block; }
 
-        /* DEMO VISUAL - FLUJO */
-        .demo-section { max-width: 1000px; margin: 0 auto 80px; padding: 0 5%; }
+        .demo-section { max-width: 1000px; margin: 0 auto 40px; padding: 0 5%; }
         .flow-container { display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid var(--border-light); border-radius: 16px; padding: 40px 30px; box-shadow: var(--shadow-md); overflow-x: auto; gap: 20px; }
         .flow-node { text-align: center; flex: 1; min-width: 120px; }
         .flow-icon { width: 50px; height: 50px; background: var(--bg-surface); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 1px solid var(--border-light); color: var(--accent); }
@@ -91,7 +71,11 @@
         .flow-arrow { color: var(--border-light); }
         @media(max-width: 768px) { .flow-container { flex-direction: column; gap: 15px; padding: 30px 20px; } .flow-arrow { transform: rotate(90deg); } }
 
-        /* CASO DE ÉXITO OPERATIVO */
+        /* SECCIÓN DE VÍDEO DEMOSTRACIÓN */
+        .demo-video-wrapper { max-width: 1100px; margin: 0 auto 80px; padding: 0 5%; text-align: center; }
+        .demo-video-wrapper h2 { font-family: var(--font-display); font-size: 2rem; margin-bottom: 30px; }
+        .demo-video-wrapper video, .demo-video-wrapper iframe { width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-light); display: block; background: #000; }
+
         .case-study { max-width: 1100px; margin: 80px auto; padding: 0 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
         .case-img img { width: 100%; border-radius: 16px; box-shadow: var(--shadow-md); }
         .case-content h2 { font-family: var(--font-display); font-size: 2rem; margin-bottom: 20px; line-height: 1.2; }
@@ -101,7 +85,6 @@
         .metric strong { font-family: var(--font-display); font-size: 1.8rem; color: var(--accent); }
         @media(max-width: 900px) { .case-study { grid-template-columns: 1fr; } }
 
-        /* TRUST / INFRAESTRUCTURA */
         .trust-section { background: #0f172a; color: #fff; padding: 80px 5%; margin: 80px 0; }
         .trust-container { max-width: 1100px; margin: 0 auto; text-align: center; }
         .trust-container h2 { font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 50px; }
@@ -113,7 +96,6 @@
         @media(max-width: 900px) { .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; } .trust-item { border-left: none; border-top: 1px solid #334155; padding-top: 20px; padding-left: 0; } }
         @media(max-width: 500px) { .trust-grid { grid-template-columns: 1fr; } }
 
-        /* PRICING SAAS - 3 PLANES */
         .pricing-section { padding: 60px 5% 100px; }
         .pricing-header { text-align: center; max-width: 600px; margin: 0 auto 60px; }
         .pricing-header h2 { font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 15px; }
@@ -138,18 +120,32 @@
 
         @media(max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; max-width: 400px; } .price-card.featured { transform: none; } }
 
-        /* FULL WIDTH IMAGE */
+        /* SECCIÓN DE PREGUNTAS FRECUENTES */
+        .faq-section { max-width: 800px; margin: 40px auto 100px; padding: 0 5%; }
+        .faq-header { text-align: center; margin-bottom: 40px; }
+        .faq-header h2 { font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 15px; }
+        
+        .faq-item { border-bottom: 1px solid var(--border-light); padding: 20px 0; }
+        .faq-item details { cursor: pointer; }
+        .faq-item summary { font-weight: 600; font-size: 1.1rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '+'; font-size: 1.5rem; color: var(--accent); transition: transform 0.2s ease; }
+        .faq-item details[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin-top: 15px; color: var(--text-muted); font-size: 1rem; line-height: 1.6; padding-right: 20px; }
+
+        /* CTA FINAL FAQ */
+        .faq-cta { text-align: center; margin-top: 50px; padding: 40px; background: var(--bg-surface); border-radius: 16px; border: 1px solid var(--border-light); }
+        .faq-cta h3 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 10px; color: var(--text-primary); }
+        .faq-cta p { color: var(--text-muted); margin-bottom: 25px; font-size: 1.05rem; }
+
         .bottom-image { width: 100%; max-height: 500px; object-fit: cover; display: block; }
 
-        /* FOOTER DISCRETO CON ELEMENTOS DE CONTACTO */
         footer { background: #000; color: #94a3b8; padding: 40px 5%; font-size: 0.9rem; border-top: 1px solid #111; }
         .footer-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
-        
         .footer-center { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
         .footer-contact-item { display: flex; align-items: center; gap: 8px; color: #94a3b8; text-decoration: none; transition: 0.2s; }
         .footer-contact-item:hover { color: #fff; }
         .footer-contact-item i { width: 16px; height: 16px; color: var(--accent); }
-
         .footer-right { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
         .footer-right a { color: #94a3b8; text-decoration: none; }
         .footer-right a:hover { color: #fff; }
@@ -168,7 +164,7 @@
         </div>
         <div class="nav-right">
             <a href="#demo" class="btn-ghost-dark">Cómo funciona</a>
-            <a href="#contacto" class="btn-nav">Solicitar Demo</a>
+            <a href="#contacto" class="btn-nav">Solicitar demostración</a>
         </div>
     </header>
 
@@ -176,26 +172,12 @@
         <section class="hero" data-aos="fade-up">
             <h1>Tus leads inmobiliarios respondidos en <span>segundos.</span></h1>
             <p>Clasificación automática, CRM actualizado y alertas instantáneas para que tu equipo comercial no pierda ni una sola oportunidad de venta.</p>
-            
-            <div class="cta-group">
-                <a href="#contacto" class="btn-primary">Solicitar Demo</a>
-            </div>
-
-            <div class="live-logs" data-aos="fade-up" data-aos-delay="100">
-                <div class="log-header">
-                    <div class="pulse-dot"></div> Simulación de Operación Activa
-                </div>
-                <div class="log-body">
-                    <p><span class="log-time">[14:32:01]</span> Lead recibido en Idealista (Chalet Alicante)</p>
-                    <p><span class="log-time">[14:32:02]</span> Procesando viabilidad... <span class="log-success">Presupuesto Aprobado</span></p>
-                    <p><span class="log-time">[14:32:03]</span> Ficha de cliente creada en CRM</p>
-                    <p class="log-highlight"><span class="log-time">[14:32:04]</span> Agente notificado vía WhatsApp. Lead asignado.</p>
-                </div>
-            </div>
         </section>
 
         <div class="hero-image-wrapper" data-aos="fade-up">
-            <img src="hero.jpg" alt="Panel de control inmobiliario en tablet">
+            <video autoplay loop muted playsinline poster="logo.png">
+                <source src="bucle.mp4" type="video/mp4">
+            </video>
         </div>
 
         <section id="demo" class="demo-section" data-aos="fade-up">
@@ -236,31 +218,39 @@
                 <img src="break.jpg" alt="Agente inmobiliaria trabajando con cero fricción">
             </div>
             <div class="case-content" data-aos="fade-left">
-                <span style="color: var(--accent); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Escenario operativo habitual</span>
-                <h2>Elimina la carga administrativa. Céntrate en vender.</h2>
+                <h2>Cada minuto cuenta.</h2>
                 <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">
-                    Antes del sistema, el equipo comercial invertía varias horas al día revisando mensajes, clasificando contactos y registrando datos manualmente en el CRM. Muchos leads tardaban demasiado en responderse y las oportunidades se enfriaban antes del primer contacto.
+                    Cuando un nuevo comprador solicita información, el tiempo juega en vuestra contra.
                 </p>
-                <p style="color: var(--text-muted); font-size: 1.1rem;">
-                    Con Propel Agents AI, el procesamiento y la classification se realizan automáticamente en segundos. El agente recibe únicamente los leads organizados y listos para actuar.
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">
+                    Propel Agents AI automatiza el registro, la clasificación y las notificaciones para que cada nueva oportunidad llegue organizada, lista para actuar y sin trabajo administrativo para vuestro equipo.
                 </p>
                 
-                <div class="case-metrics">
-                    <div class="metric">
-                        <span>Tiempo de respuesta</span>
-                        <strong>90 seg</strong>
-                    </div>
-                    <div class="metric">
-                        <span>Horas recuperadas</span>
-                        <strong>+15h/sem</strong>
-                    </div>
+                <div style="color: var(--text-muted); font-size: 1.1rem;">
+                    <p style="margin-bottom: 10px;">✔ Registro automático en HubSpot.</p>
+                    <p style="margin-bottom: 10px;">✔ Clasificación según el nivel de interés.</p>
+                    <p style="margin-bottom: 10px;">✔ Avisos inmediatos por Email y SMS.</p>
+                    <p>✔ Más tiempo para atender compradores.</p>
                 </div>
             </div>
         </section>
 
+        <div class="demo-video-wrapper" data-aos="fade-up">
+            <h2 style="margin-bottom: 10px;">Así funciona Propel Agents AI con un lead real</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 30px;">Descubre cómo cada nuevo lead se registra, clasifica y notifica automáticamente desde el primer segundo.</p>
+            <video controls width="100%" preload="metadata" poster="logo.png" style="margin-bottom: 15px;">
+                <source src="demo_larga.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de vídeo.
+            </video>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 40px; font-style: italic;">La demostración recrea un proceso comercial completo basado en un caso habitual del sector inmobiliario.</p>
+            <div class="cta-group" style="margin-bottom: 0;">
+                <a href="#contacto" class="btn-primary">Solicitar demostración</a>
+            </div>
+        </div>
+
         <section class="trust-section">
             <div class="trust-container" data-aos="fade-up">
-                <h2>Infraestructura Segura y Trazable</h2>
+                <h2>Todo ocurre automáticamente, sin perder el control.</h2>
                 <div class="trust-grid">
                     <div class="trust-item">
                         <i data-lucide="activity"></i>
@@ -292,49 +282,112 @@
                 <p style="color: var(--text-muted); font-size: 1.1rem;">Invierte en tiempo comercial, no en herramientas fragmentadas.</p>
             </div>
             
-            <div class="pricing-grid">
-                <div class="price-card" data-aos="fade-up">
-                    <div class="plan-name">Start</div>
-                    <div class="price-amount">399€<span>/mes</span></div>
-                    <p class="plan-desc">La base operativa para dejar de perder leads por demoras en respuesta.</p>
+            <div class="pricing-grid" style="grid-template-columns: 1fr; max-width: 450px;">
+                <div class="price-card featured" data-aos="fade-up">
+                    <div class="plan-name" style="color: var(--accent);">Propel Agents AI</div>
+                    <div class="price-amount">399€<span>/mes + IVA</span></div>
+                    <p class="plan-desc" style="margin-bottom: 15px; font-weight: 600; min-height: auto;">Implantación y configuración inicial incluidas durante el lanzamiento.</p>
+                    <p class="plan-desc">Ideal para inmobiliarias que quieren responder más rápido y no perder oportunidades de venta.</p>
                     <ul class="features-list">
-                        <li><i data-lucide="check"></i> Captura automática 24/7</li>
-                        <li><i data-lucide="check"></i> Filtro y clasificación básica</li>
-                        <li><i data-lucide="check"></i> Volcado automático en CRM</li>
-                        <li><i data-lucide="check"></i> Alerta inmediata al comercial</li>
-                        <li><i data-lucide="check"></i> Trazabilidad de operaciones</li>
+                        <li><i data-lucide="check"></i> Recepción automática de nuevos leads 24/7</li>
+                        <li><i data-lucide="check"></i> Clasificación automática según el nivel de interés del comprador</li>
+                        <li><i data-lucide="check"></i> Registro automático en HubSpot</li>
+                        <li><i data-lucide="check"></i> Alerta inmediata al agente por Email y SMS</li>
+                        <li><i data-lucide="check"></i> Aviso automático al cliente por Email y SMS</li>
+                        <li><i data-lucide="check"></i> Soporte y actualizaciones incluidas</li>
                     </ul>
-                    <a href="#contacto" class="btn-plan">Solicitar Demo</a>
+                    <p style="font-size: 0.9rem; margin-bottom: 20px; font-weight: 600;">Compromiso inicial de 3 meses</p>
+                    <a href="#contacto" class="btn-plan">Solicitar demostración</a>
                 </div>
+            </div>
+        </section>
 
-                <div class="price-card featured" data-aos="fade-up" data-aos-delay="100">
-                    <div class="badge">MÁS ELEGIDO</div>
-                    <div class="plan-name" style="color: var(--accent);">Conversión</div>
-                    <div class="price-amount">899€<span>/mes</span></div>
-                    <p class="plan-desc">El sistema central para agencias que quieren maximizar cierres y urgencia.</p>
-                    <ul class="features-list">
-                        <li><i data-lucide="check"></i> <strong>Todo lo del plan Start</strong></li>
-                        <li><i data-lucide="check"></i> Seguimiento WhatsApp automatizado</li>
-                        <li><i data-lucide="check"></i> Lead scoring (clasificación por urgencia)</li>
-                        <li><i data-lucide="check"></i> Detección de inversores</li>
-                        <li><i data-lucide="check"></i> Reasignación de leads inactivos</li>
-                    </ul>
-                    <a href="#contacto" class="btn-plan">Solicitar Demo</a>
-                </div>
+        <section class="faq-section" data-aos="fade-up">
+            <div class="faq-header">
+                <h2>Preguntas frecuentes</h2>
+            </div>
 
-                <div class="price-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="plan-name">Autónomo</div>
-                    <div class="price-amount">1.699€<span>/mes</span></div>
-                    <p class="plan-desc">Infraestructura total. Delegación de procesos con máxima seguridad.</p>
-                    <ul class="features-list">
-                        <li><i data-lucide="check"></i> <strong>Todo lo del plan Conversión</strong></li>
-                        <li><i data-lucide="check"></i> Asistente IA con supervisión humana</li>
-                        <li><i data-lucide="check"></i> Agenda y cualificación conversacional</li>
-                        <li><i data-lucide="check"></i> Reactivación de cartera fría</li>
-                        <li><i data-lucide="check"></i> SLA de soporte prioritario</li>
-                    </ul>
-                    <a href="#contacto" class="btn-plan">Solicitar Demo</a>
-                </div>
+            <div class="faq-item">
+                <details>
+                    <summary>¿Tendré que cambiar la forma de trabajar de mi equipo?</summary>
+                    <p>No. Propel Agents AI se adapta a vuestro proceso comercial, no al revés. El sistema automatiza las tareas repetitivas en segundo plano, mientras vuestro equipo continúa trabajando como siempre. El objetivo es que los agentes dediquen menos tiempo a tareas administrativas y más tiempo a atender compradores y cerrar operaciones.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Qué incluye la implantación?</summary>
+                    <p>La implantación incluye la configuración inicial del sistema, la integración con vuestro entorno de trabajo y las pruebas de funcionamiento. Realizamos todas las pruebas necesarias para comprobar que el sistema funciona correctamente antes de comenzar a trabajar con clientes reales.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Cuánto tiempo tarda la implementación?</summary>
+                    <p>La puesta en marcha suele completarse en pocos días. Nuestro equipo se encarga de la configuración técnica para que la transición sea rápida y no afecte al trabajo diario de vuestra oficina.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Hay algún tipo de compromiso de permanencia?</summary>
+                    <p>Sí. El servicio tiene un compromiso inicial de 3 meses. Este periodo nos permite realizar la implantación, adaptar el sistema a vuestra operativa y acompañaros durante la puesta en marcha para asegurar que todo funcione correctamente desde el primer día. Finalizado este periodo, la suscripción continúa mes a mes.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Es compatible con mi CRM?</summary>
+                    <p>Actualmente, Propel Agents AI está optimizado para HubSpot. Si vuestra inmobiliaria utiliza otro CRM, evaluaremos la integración durante la demostración y os indicaremos la mejor solución para vuestro caso. Nuestro objetivo es adaptarnos a vuestra forma de trabajar siempre que sea técnicamente viable.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Es seguro el tratamiento de los datos?</summary>
+                    <p>Sí. La información de vuestra inmobiliaria se trata utilizando servicios profesionales y medidas de seguridad adecuadas. La información se utiliza exclusivamente para automatizar vuestro proceso comercial y mejorar la gestión de los nuevos leads.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Cuándo empezaré a notar resultados?</summary>
+                    <p>Desde el primer día el sistema comienza a registrar, clasificar y notificar automáticamente los nuevos leads. Los resultados estarán directamente relacionados con el volumen de contactos que reciba vuestra inmobiliaria y con la rapidez con la que vuestro equipo gestione esas oportunidades.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Qué ocurre si necesito hacer cambios más adelante?</summary>
+                    <p>No hay problema. Si vuestra forma de trabajar evoluciona o necesitáis adaptar el sistema a nuevos procesos, realizaremos los ajustes necesarios para que el sistema continúe integrándose perfectamente en el día a día de vuestra inmobiliaria.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Recibiré soporte técnico si lo necesito?</summary>
+                    <p>Sí. Contarás con soporte directo tanto para resolver cualquier incidencia como para realizar ajustes en la configuración si tus procesos comerciales evolucionan con el tiempo.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Qué tipo de inmobiliarias pueden beneficiarse de Propel Agents AI?</summary>
+                    <p>Está pensado para inmobiliarias que desean responder más rápido a los nuevos compradores, mejorar la organización de sus oportunidades comerciales y reducir el tiempo dedicado a tareas administrativas. Tanto si gestionáis un volumen reducido de leads como si recibís decenas cada semana, el sistema se adapta a vuestro ritmo de trabajo.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>¿Cómo puedo ver cómo funcionaría en mi caso?</summary>
+                    <p>La mejor forma de descubrir cómo puede ayudaros Propel Agents AI es solicitar una demostración personalizada. Analizaremos vuestro proceso comercial y os mostraremos cómo el sistema puede adaptarse a vuestra forma de trabajar.</p>
+                </details>
+            </div>
+
+            <div class="faq-cta" data-aos="fade-up">
+                <h3>¿Todavía tienes alguna duda?</h3>
+                <p>Estaremos encantados de resolver cualquier pregunta durante una demostración personalizada, sin compromiso.</p>
+                <a href="#contacto" class="btn-primary">Solicitar demostración</a>
             </div>
         </section>
 
@@ -362,7 +415,6 @@
             <div class="footer-right">
                 <a href="aviso-legal.html">Aviso Legal</a>
                 
-                <!-- INTEGRACIÓN EXCLUSIVA DE IUBENDA SOLICITADA -->
                 <a href="https://www.iubenda.com/privacy-policy/80140842" class="iubenda-white iubenda-noiframe iubenda-embed" title="Política de Privacidad ">Política de Privacidad</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                 
                 <a href="https://www.iubenda.com/privacy-policy/80140842/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Política de Cookies ">Política de Cookies</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
@@ -373,29 +425,21 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- INTEGRACIÓN DE CALENDLY: Carga de la API JavaScript de Calendly -->
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     
     <script>
-        // Inicializar iconos de Lucide (detecta automáticamente los nuevos del footer)
         lucide.createIcons();
-        
-        // Inicializar animaciones AOS
         AOS.init({ duration: 800, once: true, offset: 50 });
 
-        // LÓGICA DE CAPTURA PARA DISPARAR EL MODAL FLOTANTE DE CALENDLY
         document.addEventListener("DOMContentLoaded", function() {
-            const demoButtons = Array.from(document.querySelectorAll('a')).filter(el => el.textContent.trim() === 'Solicitar Demo');
+            const demoButtons = Array.from(document.querySelectorAll('a')).filter(el => el.textContent.trim() === 'Solicitar demostración');
             
             demoButtons.forEach(button => {
                 button.addEventListener('click', function(e) {
                     e.preventDefault(); 
-                    
                     Calendly.initPopupWidget({ 
                         url: 'https://calendly.com/propel-agentsai-demo/15min?lang=es' 
                     });
-                    
                     return false;
                 });
             });
